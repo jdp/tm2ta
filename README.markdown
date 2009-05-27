@@ -1,6 +1,6 @@
-tm2ta is a simple script to try to convert TextAdept themes to TextMate themes.
+tm2ta is a simple script to try to convert TextMate themes to TextAdept themes.
 If you do not know what TextAdept is, I am surprised you're reading this.
-If you still care, TextAdept is a minimalist text editor that is insanely extensible with Lua, and (this is its homepage)[http://textadept.caladbolg.net].
+If you still care, TextAdept is a minimalist text editor that is insanely extensible with Lua, and [this is its homepage](http://textadept.caladbolg.net).
 
 # Install
 
