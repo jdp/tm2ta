@@ -21,7 +21,7 @@ This command could help:
 
     curl http://github.com/jdp/tm2ta/raw/master/tm2ta.php > tm2ta.php
 
-Now, go to a directory where you can put executables.
+Now, `cd` to a directory where you can put executables.
 On my machine, `~/bin` works but I had to add that to my shell config file.
 Now make a symbolic link to the `tm2ta.php` file:
 
@@ -32,3 +32,24 @@ Make it executable:
     chmod u+x tm2ta
 
 Now you can invoke it just by using the `tm2ta` command.
+
+# Usage
+
+tm2ta does not make a whole theme for you.
+TextAdept's theming system is still too messy for that.
+What it does do is extract the properties from unbelievably ugly tmTheme XML and format them as Lua.
+
+### Basic Usage
+
+The most basic usage is just specifying an input file with the -f switch.
+It will print the Lua code to stdout.
+
+    tm2ta -f theme.tmTheme
+
+### Getting Fancy
+
+If you want to output somewhere other than stdout, just specify the outfile with the -o switch.
+
+    tm2ta -f theme.tmTheme -o lexer.lua
+
+That it pretty much it.
