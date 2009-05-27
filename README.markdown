@@ -46,6 +46,14 @@ It will print the Lua code to stdout.
 
     tm2ta -f theme.tmTheme
 
+Here's the output of the [Argonaut](http://www.tmthemes.com/theme/Argonaut/) TextMate theme:
+
+    style_comment = style { italic = true, fore = color('00','A6','FF') }
+    style_string = style { fore = color('64','97','C5') }
+    style_constant = style { bold = true, fore = color('A4','ED','2D') }
+    style_preprocessor = style { fore = color('7B','9A','00') }
+    style_function = style { bold = true, fore = color('FF','CA','00') }
+
 ### Getting Fancy
 
 If you want to output somewhere other than stdout, just specify the outfile with the -o switch.
@@ -53,3 +61,8 @@ If you want to output somewhere other than stdout, just specify the outfile with
     tm2ta -f theme.tmTheme -o lexer.lua
 
 That it pretty much it.
+
+# Problems
+
+* TextAdept's theming system is messy. You'll still have to change stuff like caret and indent guide colors manually.
+* I don't use Macs. I don't use TextMate. If I left out any properties, add them to the `$ident_map` variable and send a pull request.
